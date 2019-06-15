@@ -10,6 +10,30 @@ function nestedTarget(){
 
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
+  
+  for(let i = 0; i < rankedLists.length; i++){
+    let children = rankedLists[i].children;
+    
+    for(let c = 0; c < children.length; c++){
+      children[c].innerHTML = parseInt(children[c].innerHTML) + n;
+      
+    }
+  }
+}
+
+function deepestChild(){
+  let grandNode = document.querySelector('#grand-node');
+  let next = grandNode.children[0];
+  
+  while(next){
+    grandNode = next;
+    next = grandNode.children[0]
+  }
+  return grandNode;
+}
+/*
+function increaseRankBy(n){
+  const rankedLists = document.querySelectorAll('.ranked-list')
   const firstList = rankedLists[0]
   const secondList = rankedLists[1]
 
@@ -27,7 +51,8 @@ function increaseRankBy(n){
 }
       
 }
-
+*/
+// <<<<<<< HEAD
 // function deepestChild(){
 //   var divs = document.querySelectorAll('div');
 //   var current = 
@@ -52,7 +77,7 @@ function increaseRankBy(n){
 //   }
 //   return grandNode;
 // }
-
+/*
 function deepestChild(){
   var grandNode = document.getElementById('grand-node').querySelectorAll('div')
  var result = Object.assign({}, grandNode)
@@ -61,4 +86,16 @@ function deepestChild(){
 //     return grandNode[i].innerHTML
 // }
 return document.querySelector('#grand-node div div div div')
-}
+=======
+function deepestChild(){
+  var current = document.querySelectorAll('div');
+  var next= [];
+  var index =0
+  while(current || current === 0){
+    // if(Array.isArray(current))
+    next.push(current[index])
+    index++
+  }
+  console.log(next) 
+>>>>>>> 70d3aaee0216fc19911a7788a7fdd3924d0f277f
+}*/
