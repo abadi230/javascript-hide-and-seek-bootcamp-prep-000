@@ -28,6 +28,7 @@ function increaseRankBy(n){
       
 }
 
+<<<<<<< HEAD
 // function deepestChild(){
 //   var divs = document.querySelectorAll('div');
 //   var current = 
@@ -61,4 +62,16 @@ function deepestChild(){
 //     return grandNode[i].innerHTML
 // }
 return document.querySelector('#grand-node div div div div')
+=======
+function deepestChild(){
+  var current = document.querySelectorAll('div');
+  var next= [];
+  var index =0
+  while(current || current === 0){
+    // if(Array.isArray(current))
+    next.push(current[index])
+    index++
+  }
+  console.log(next) 
+>>>>>>> 70d3aaee0216fc19911a7788a7fdd3924d0f277f
 }
