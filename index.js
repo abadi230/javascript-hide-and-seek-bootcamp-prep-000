@@ -27,6 +27,7 @@ function deepestChild(){
   
   while(grandNode){
     grandNode = next;
+    next = grandNode[0].children
   }
 }
 /*
