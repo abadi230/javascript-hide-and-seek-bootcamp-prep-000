@@ -7,7 +7,7 @@ function nestedTarget(){
   var target = document.querySelector('#nested .target');
   return target;
 }
-
+/*
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
   const firstList = rankedLists[0]
@@ -27,7 +27,7 @@ function increaseRankBy(n){
 }
       
 }
-
+*/
 <<<<<<< HEAD
 // function deepestChild(){
 //   var divs = document.querySelectorAll('div');
@@ -53,7 +53,7 @@ function increaseRankBy(n){
 //   }
 //   return grandNode;
 // }
-
+/*
 function deepestChild(){
   var grandNode = document.getElementById('grand-node').querySelectorAll('div')
  var result = Object.assign({}, grandNode)
