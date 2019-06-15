@@ -21,7 +21,13 @@ function increaseRankBy(n){
   }
 }
 
-function 
+function deepestChild(){
+  const grandNode = document.querySelector('#grand-node');
+  
+  while(grandNode){
+    let next = grandNode.children;
+  }
+}
 /*
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
