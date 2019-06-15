@@ -29,6 +29,7 @@ function deepestChild(){
     grandNode = next;
     next = grandNode[0].children
   }
+  return grandNode;
 }
 /*
 function increaseRankBy(n){
