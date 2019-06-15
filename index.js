@@ -20,6 +20,8 @@ function increaseRankBy(n){
     }
   }
 }
+
+function 
 /*
 function increaseRankBy(n){
   const rankedLists = document.querySelectorAll('.ranked-list')
